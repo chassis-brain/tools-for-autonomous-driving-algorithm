@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+  <route id="custom-0001" road_id="892" town="Town13">
+    <waypoints>
+      <position x="4745.3" y="3984.1" z="156.4" />
+      <position x="4735.3" y="3984.1" z="156.3" />
+      <position x="4725.3" y="3984.2" z="156.0" />
+      <position x="4715.3" y="3984.2" z="155.8" />
+      <position x="4705.3" y="3984.3" z="155.6" />
+      <position x="4695.3" y="3984.3" z="155.4" />
+      <position x="4685.3" y="3984.4" z="155.2" />
+      <position x="4675.3" y="3984.4" z="155.0" />
+      <position x="4665.3" y="3984.5" z="154.7" />
+      <position x="4655.3" y="3984.5" z="154.5" />
+      <position x="4645.3" y="3984.6" z="154.3" />
+      <position x="4635.3" y="3984.6" z="154.1" />
+      <position x="4625.3" y="3984.7" z="153.9" />
+      <position x="4615.3" y="3984.7" z="153.7" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ParkingExit_custom_1" type="ParkingExit">
+        <trigger_point x="4745.3" y="3984.1" yaw="179.7" z="156.4" />
+        <direction value="right" />
+        <front_vehicle_distance value="9" />
+        <behind_vehicle_distance value="9" />
+      </scenario>
+    </scenarios>
+    <weathers>
+      <weather route_percentage="0" cloudiness="5.0" precipitation="0.0"
+               precipitation_deposits="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0"
+               sun_altitude_angle="45.0" fog_density="2.0" wetness="0.0" />
+      <weather route_percentage="100" cloudiness="5.0" precipitation="0.0"
+               precipitation_deposits="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0"
+               sun_altitude_angle="45.0" fog_density="2.0" wetness="0.0" />
+    </weathers>
+  </route>
+</routes>
+

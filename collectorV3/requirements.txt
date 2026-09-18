@@ -1,0 +1,38 @@
+# Failure Replay Workbench / B2D Custom Collector
+# Tested project baseline: Python 3.7.x
+#
+# Install:
+#   python -m pip install -r requirements.txt
+#
+# Then install this repository itself if desired:
+#   python -m pip install -e .
+#
+# IMPORTANT EXTERNAL RUNTIMES (NOT installed here):
+# - CARLA 0.9.15 Python API:
+#     use the Python-3.7 egg/wheel shipped with CARLA, e.g.
+#     carla-0.9.15-py3.7-linux-x86_64.egg
+# - Bench2Drive / Leaderboard / ScenarioRunner:
+#     provided by the upstream repository/path, not PyPI.
+# - torch / CUDA:
+#     install a build compatible with the machine, E2E model and CARLA-Garage
+#     environment. Do not blindly install a CPU/default torch wheel here.
+# - tkinter:
+#     Python/OS package, not a normal pip dependency.
+#     If missing in conda: conda install tk
+
+# Core collector
+numpy==1.21.6
+opencv-python==4.8.1.78
+PyYAML==6.0.1
+h5py==3.7.0
+pygame==2.5.2
+laspy[lazrs]==2.4.1
+
+# PDM-Lite / CARLA-Garage runtime helpers
+scipy==1.7.3
+matplotlib==3.5.3
+Shapely==1.8.5.post1
+ujson==5.7.0
+
+# Development / validation
+pytest==7.4.4

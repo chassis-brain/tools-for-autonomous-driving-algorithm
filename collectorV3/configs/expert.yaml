@@ -1,0 +1,24 @@
+mode: expert
+
+route_xml: routes/custom_parking_exit.xml
+route_id: "custom-0001"
+
+weather_id: 0
+output_root: outputs_expert
+
+frequency_hz: 10.0
+
+# First smoke test: reduce load.
+sensor_profile: camera_only
+jpeg_quality: 20
+
+display:
+  enabled: false
+  camera_id: CAM_FRONT
+  width: 960
+  height: 540
+
+expert:
+  module: b2d_collector.experts.pdm_lite
+  entry_point: PdmLiteExpert
+  config: ""

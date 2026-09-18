@@ -1,0 +1,18 @@
+mode: manual                  # manual | expert | hybrid
+route_xml: routes/custom_parking_exit.xml
+route_id: "custom-0001"
+weather_id: 0
+output_root: outputs
+frequency_hz: 10.0
+sensor_profile: full          # full | camera_only
+jpeg_quality: 20
+display:
+  enabled: true
+  camera_id: CAM_FRONT
+  width: 960
+  height: 540
+expert:
+  module: ""
+  entry_point: ""
+  config: ""
+

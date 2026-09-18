@@ -1,0 +1,59 @@
+{
+    "name": "diffusiondrive_b2d_v1",
+    "version": 1,
+  
+    "sensors": {
+      "rgb": [
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT",
+        "CAM_FRONT_RIGHT"
+      ],
+      "lidar": [
+        "LIDAR_TOP"
+      ],
+      "ego": [
+        "GPS",
+        "IMU",
+        "SPEED"
+      ]
+    },
+  
+    "camera_preprocess": {
+      "order": [
+        "CAM_FRONT_LEFT",
+        "CAM_FRONT",
+        "CAM_FRONT_RIGHT"
+      ],
+      "output_width": 1024,
+      "output_height": 256,
+      "store_preprocessed": false
+    },
+  
+    "lidar_preprocess": {
+      "min_x": -32.0,
+      "max_x": 32.0,
+      "min_y": -32.0,
+      "max_y": 32.0,
+      "pixels_per_meter": 4.0,
+      "hist_max_per_pixel": 5
+    },
+  
+    "trajectory": {
+      "time_horizon": 4.0,
+      "interval_length": 0.5,
+      "num_poses": 8
+    },
+  
+    "features": {
+      "driving_command": true,
+      "ego_velocity": true,
+      "ego_acceleration": true
+    },
+  
+    "targets": {
+      "trajectory": true,
+      "agent_boxes": true,
+      "bev_semantic_map": false
+    }
+  }
+  

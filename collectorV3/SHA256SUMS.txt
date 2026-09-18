@@ -1,0 +1,2 @@
+732a9e15e3782fc1d93e0aaa782abd87a9c047d1da87198a2cfe2177c24093d7  tools/manual_plan_panel.py
+56f1acab2b925fb86f1eed5bb20bc25a00e14883e2a7e764b23ef224fac9832b  HOTFIX_README.txt

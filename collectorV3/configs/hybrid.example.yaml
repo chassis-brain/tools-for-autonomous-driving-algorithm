@@ -1,0 +1,20 @@
+mode: hybrid
+route_xml: routes/custom_parking_exit.xml
+route_id: "custom-0001"
+weather_id: 0
+output_root: outputs_hybrid
+frequency_hz: 10.0
+sensor_profile: full
+jpeg_quality: 20
+
+display:
+  enabled: true
+  camera_id: CAM_FRONT
+  width: 960
+  height: 540
+
+expert:
+  # Replace this scaffold with the new expert module when implementation begins.
+  module: b2d_collector.experts.template
+  entry_point: ExpertTemplate
+  config: ""

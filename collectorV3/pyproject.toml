@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "b2d-custom-collector"
+version = "0.1.0"
+description = "Manual/expert CARLA data collector with Bench2Drive-compatible route XML and dataset layout"
+readme = "README.md"
+requires-python = ">=3.7,<3.11"
+license = {text = "MIT"}
+dependencies = [
+  "numpy>=1.21,<2",
+  "opencv-python>=4.5",
+  "PyYAML>=6",
+  "h5py>=3.7",
+  "pygame>=2.1",
+  "laspy[lazrs]>=2.4",
+  "matplotlib>=3.5,<3.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.5"]
+review = ["matplotlib>=3.5"]
+
+[project.scripts]
+b2d-route = "b2d_collector.route_xml:main"
+b2d-dataset-check = "b2d_collector.validate_dataset:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py38"
+

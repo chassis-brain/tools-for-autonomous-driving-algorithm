@@ -1,0 +1,9 @@
+name: b2d-collector
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - pip
+  - pip:
+      - -e .
+
